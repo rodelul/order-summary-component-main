@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 20px;
+}
+
+.hero--inner {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hero--inner .hero-img img {
+    max-width: 350px;
+    border-radius: 20px 20px 0 0;
+}
+
+.texts {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texts h2 {
+    color: hsl(223, 47%, 23%);
+}
+
+.texts p {
+    color: hsl(224, 23%, 55%);
+}
+
+.anual-plan {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price {
+    margin-left: -10%;
+}
+
+.price h4 {
+    font-size: 14px;
+}
+
+.price p {
+    font-size: 14px;
+}
+
+ a {
+    color: blue;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.buttons .payment {
+    background-color: blue;
+    font-family: "Red Hat Display", sans-serif;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+}
+
+.buttons .payment:hover {
+    cursor: pointer;
+}
+
+.buttons .cancel {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: hsl(223, 47%, 23%);
+}
+
+.buttons .cancel:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-family: "Red Hat Display", sans-serif;
+        background-image: url(/images/pattern-background-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+}
+
